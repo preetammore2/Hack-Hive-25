@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Statistics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div class="background-animation">
+        <span class="icon">🔒</span>
+        <span class="icon">💾</span>
+        <span class="icon">🔐</span>
+        <span class="icon">🛡️</span>
+    </div>
+    <div class="container">
+        <h1>Quiz Performance Statistics</h1>
+        <div class="stats">
+            <p>Total Questions: <span id="total-questions"></span></p>
+            <p>Correct Answers: <span id="correct-answers"></span></p>
+            <p>Incorrect Answers: <span id="incorrect-answers"></span></p>
+            <p>Percentage Score: <span id="percentage-score"></span>%</p>
+        </div>
+        <h2>Question Breakdown</h2>
+        <div id="question-breakdown"></div>
+        <div class="feedback-form">
+            <h2>Rate the Quiz</h2>
+            <div class="star-rating">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+            </div>
+            <textarea id="comments" placeholder="Share your feedback or suggestions..."></textarea>
+            <button onclick="submitFeedback()" class="btn">Submit Feedback</button>
+            <p id="feedback-message" style="display: none;"></p>
+        </div>
+        <a href="results.html" class="btn">Back to Results</a>
+        <a href="index.html" class="btn">Try Again</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

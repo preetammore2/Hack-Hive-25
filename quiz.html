@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div class="background-animation">
+        <span class="icon">🔒</span>
+        <span class="icon">💾</span>
+        <span class="icon">🔐</span>
+        <span class="icon">🛡️</span>
+    </div>
+    <div class="container">
+        <div class="sound-toggle">
+            <label for="sound">🔊</label>
+            <input type="checkbox" id="sound" checked>
+        </div>
+        <h1>Cybersecurity Awareness Quiz</h1>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div class="timer">
+            <span id="timer-text">30</span>s
+            <div class="timer-bar"><div id="timer-progress"></div></div>
+        </div>
+        <p>Score: <span id="score">0</span></p>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="hint"></div>
+        <button id="hint-btn" class="btn">Get Hint</button>
+        <div id="feedback"></div>
+        <button id="next-btn" class="btn" disabled>Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

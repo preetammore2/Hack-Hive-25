@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div class="background-animation">
+        <span class="icon">🔒</span>
+        <span class="icon">💾</span>
+        <span class="icon">🔐</span>
+        <span class="icon">🛡️</span>
+    </div>
+    <div class="container">
+        <h1>Quiz Results</h1>
+        <p>Your Score: <span id="final-score"></span></p>
+        <p id="result-message"></p>
+        <a href="statistics.html" class="btn">View Detailed Statistics</a>
+        <button onclick="shareScore()" class="btn">Share Score</button>
+        <a href="index.html" class="btn">Try Again</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
